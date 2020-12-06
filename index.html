@@ -1,43 +1,73 @@
-<meta charset="UTF-8">
-<html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <sidebar class="side">
+        <a class="side-item side-item-active" href="index.html">
+          <div>خانه</div>
+          <div>
+            <svg
+              class="side-icon active-icon"
+              viewBox="0 0 512 512"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+              ></path>
+            </svg>
+          </div>
+        </a>
+        <a class="side-item" href="./search.html">
+          <div>جستجو</div>
+          <div>
+            <svg
+              class="side-icon"
+              viewBox="0 0 512 512"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+        </a>
+      </sidebar>
+      <main class="main">
+        <div class="player">
+          <div class="avatar">
+            <img
+              src="https://i.scdn.co/image/ab67616d00001e02df7cddc2d32ef9df762d5a30"
+            />
+          </div>
+          <div>
+            <div class="title">Don't Let Me Down</div>
+            <div>The chainsmokers</div>
+          </div>
+        </div>
+      </main>
+    </div>
 
-	<head>
-		<title>IE990720Excercise</title>
-		<h1>IE990720Excercise</h1>
-	</head>
+    <script>
+      var headerTitle = document.getElementsByClassName("title");
+      var side = document.getElementsByClassName("side");
+      console.log(side)
+      console.log(headerTitle);
+      headerTitle.textContent = "Hello";
+      headerTitle.innerText = "Goodbye";
+      console.log(headerTitle.innerText);
+      headerTitle[0].innerHTML = "<h3>Hello</h3>";
+      side[0].style.borderBottom = "solid 10px red";
 
-	<body>
-		</br>
-		<span style="font-size: 48px; margin: 21px 0; display: block;">Machine learning methods</span>
-		<p>this is a preparation for git</p>
-
-		</br>
-
-		<h2>Detailed subjects</h2>
-
-		<ol>
-			<li><b>various modes of ML</b>
-				<ul>
-
-					<li>Supervised Learning</li>
-					<li>Unsupervised learning</li>
-				</ul>
-
-			</li>
-			<li><b>numerous algorithms details</b>
-				<ul>
-					<li>Linear regression</li>
-					<li>Multi-variate regression</li>
-					<li>logistic regression</li>
-				</ul>
-			</li>	
-		</ol>
-
-		</br>
-
-		<h2>sec.1:History of machine learning</h2>
-		<p>Final purpose of every organisation</p>
-
-		</br>
-	</body>
+    </script>
+  </body>
 </html>
